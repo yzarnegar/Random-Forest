@@ -1,1 +1,28 @@
 
+The vertebral column is included a group of vertebras, invertebrate discs, nerves, muscles, medulla and joints. 
+There are three main functions for vertebral column: first it helps for body support axle, second it acts as a 
+protector of spine medulla and nervous roots and finally it helps for body movement axle. 
+Disc hernia is a disease that occurs when core of the inter-vertebral disc migrates from its
+place in the center of the disc to the border parts like the medullarly channel or to the spaces 
+where the nervous roots lie. Spondylolisthesis disease appears when one of the 33 vertebras slips in relation to the others. 
+This slipping can cause pain or irritation of the nervous roots. 
+There are some biomedical attributes like pelvic incidence, pelvic tilt, lumbar lordosis angle, sacral slope, 
+pelvic radius and grade of spondylolisthesis which are recognized to be related with developing Disc hernia and 
+Spondylolisthesis. 
+
+References:
+1) Neto, A.R.R., Barreto, G.A.: On the application of ensembles of classifiers to the diagnosis of pathologies of the vertebral column: A comparative analysis. IEEE Transactions on Latin America 7(4), 487{496 (Aug 2009)
+2) Sousa, R., Mora, B., Cardoso, J.S.: An ordinal data method for the classificationwith reject option. In: Proceedings of The Eighth International Conference on Ma-chine Learning and Applications (ICMLA 2009) (2009)
+3) Ajalmar R. da Rocha Neto, Ricardo Sousa, Guilherme de A. Barreto, and Jaime S. Cardoso: Diagnostic of Pathology on the Vertebral Column with Embedded Reject Option, IbPRIA 2011: 588-595.
+4) Tarannum A Bloch, V.B.Vaghela, K.H.Wandra: Applied Taxonomy Techniques Intended for Strenuous Random Forest Robustness, Int. J. Comp. Tech. Appl., Vol 2 (6), 2011: 2061-2065.
+5) Berthonnaud, E., Dimnet, J., Roussouly, P., Labelle, H.: Analysis of the sagittal balance of the spine and pelvis using shape and orientation parameters. Journal of Spinal Disorders & Techniques 18(1), 40{47 (2005)}
+6) Annette I. Dobson and Adrian G.Barnett.:An introduction to generalized linear models, Chapman & Hall Book, by Taylor and Francis Group, third edition, 2008. 
+7) http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm
+
+8) Freund, Y. and Schapire, R.E. (1996): ``Experiments with a New Boosting Algorithm''. In Proceedings of the Thirteenth International Conference on Machine Learning, pp. 148–156, Morgan Kaufmann
+9) Hemant Ishwaran: Modern Numerical Multivariate Methods, University of Miami Miller School of Medicine, 2012.
+10) Alfaro Cortes,  Gamez Martinez, Matias and Garcia-Rubio: Applies AdaBoost.M1, AdaBoost-SAMME and Bagging, CRAN, 2011-12-22.
+11) Max Kuhn: Building Predictive Models in R Using the caret Package, Journal of Statistical Software, November 2008, Volume 28, Issue 5.
+12) Brian Ripley: Feed-forward Neural Networks and Multinomial Log-Linear Models, CRAN, 2009-10-28 07:17:10.
+13) Andy Liaw and Matthew Wiener: Breiman and Cutler’s random forests for classiﬁcation and regression, CRAN, 2012-01-06 20:58:31.
+
