@@ -12,7 +12,7 @@ The summary statistics of data were provided. Shapiro-Wilk normality test were u
 
 <img src="https://user-images.githubusercontent.com/57342758/73783659-ec8b7000-4748-11ea-8881-0eb9d034879d.png" width="400" height="400">
 
-<img src="https://user-images.githubusercontent.com/57342758/73783665-f01ef700-4748-11ea-9430-696418936881.png" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/57342758/73783665-f01ef700-4748-11ea-9430-696418936881.png" width="400" height="400">
 
 <img src="https://user-images.githubusercontent.com/57342758/73783685-f44b1480-4748-11ea-82de-b0710b18ea25.png" width="400" height="400">
 
@@ -20,7 +20,7 @@ The summary statistics of data were provided. Shapiro-Wilk normality test were u
 These two variables at different levels of outcome variable are highly correlated. Implementing Shapiro-Wilk normality test resulted p-value < 2.2e-16, so the null hypothesis is rejected. Also some outliers were recognized for each predictor variable having values out of the specified range (Table 1).  
 
 
-<img src="https://user-images.githubusercontent.com/57342758/73783767-16449700-4749-11ea-83b8-418f7381160e.png" width="400" height="400">
+<img src="https://user-images.githubusercontent.com/57342758/73783767-16449700-4749-11ea-83b8-418f7381160e.png" width="400" height="200">
 
 #######Random Forest
 
