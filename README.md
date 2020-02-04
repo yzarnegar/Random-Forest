@@ -12,15 +12,15 @@ The summary statistics of data were provided. Shapiro-Wilk normality test were u
 
 <img src="https://user-images.githubusercontent.com/57342758/73783659-ec8b7000-4748-11ea-8881-0eb9d034879d.png" width="400" height="400">
 
-![image](https://user-images.githubusercontent.com/57342758/73783665-f01ef700-4748-11ea-9430-696418936881.png)
+<img src="https://user-images.githubusercontent.com/57342758/73783665-f01ef700-4748-11ea-9430-696418936881.png" width="400" height="400">
 
-![image](https://user-images.githubusercontent.com/57342758/73783685-f44b1480-4748-11ea-82de-b0710b18ea25.png)
+<img src="https://user-images.githubusercontent.com/57342758/73783685-f44b1480-4748-11ea-82de-b0710b18ea25.png" width="400" height="400">
 
 
 These two variables at different levels of outcome variable are highly correlated. Implementing Shapiro-Wilk normality test resulted p-value < 2.2e-16, so the null hypothesis is rejected. Also some outliers were recognized for each predictor variable having values out of the specified range (Table 1).  
 
 
-![image](https://user-images.githubusercontent.com/57342758/73783767-16449700-4749-11ea-83b8-418f7381160e.png)
+<img src="https://user-images.githubusercontent.com/57342758/73783767-16449700-4749-11ea-83b8-418f7381160e.png" width="400" height="400">
 
 #######Random Forest
 
@@ -28,11 +28,11 @@ Decision trees are one of most popular learning methods that are commonly used f
 
 Using tuneRF function and train function was resulted respectively minimum OBB error measure: 0.152103 and higher Accuracy and Kappa tuning parameter estimates (0.832 0.727) for mtry equal with 2.  The mtry then set to be 2 and Random Forest technique was implemented with ntreeTry=500. The important variables were identified. Regarding MeanDecreaseAccuracy; SacralSlope, PelvicRadius and DegreeSpondylolisthesis and PelvicTilt are the most important variables that their loses can decrease the accuracy considerably. Regarding the MeanDecreaseGini; SacralSlope, PelvicRadius, LumbarLordosisAngle and PelvicIncidence are the most important variables. 
 
-![image](https://user-images.githubusercontent.com/57342758/73784213-e77af080-4749-11ea-9b5c-44a20f4f1a48.png)
+<img src="https://user-images.githubusercontent.com/57342758/73784213-e77af080-4749-11ea-9b5c-44a20f4f1a48.png" width="400" height="400">
 
 The Random Forest method was robust and could act better and have higher performance in compare to nominal regression method. The most important variables using varSelRF function and minimal depth variable selection also identified to be: SacralSlope, PelvicRadius and DegreeSpondylolisthesis[11, 13].
 
-![image](https://user-images.githubusercontent.com/57342758/73784295-11ccae00-474a-11ea-8bd3-cdf68f30bd27.png)
+<img src="https://user-images.githubusercontent.com/57342758/73784295-11ccae00-474a-11ea-8bd3-cdf68f30bd27.png" width="400" height="400">
 
 
 
