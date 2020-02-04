@@ -1,14 +1,14 @@
+The database used in this work is Vertebral Column Data Set provided by Dr. 
+Henrique da Mota during a medical residence period in the Group of Applied Research at the Centre of 
+Medico-Chirurgical de Readaptation des Massues, Lyon, France. 
 
-The vertebral column is included a group of vertebras, invertebrate discs, nerves, muscles, medulla and joints. 
-There are three main functions for vertebral column: first it helps for body support axle, second it acts as a 
-protector of spine medulla and nervous roots and finally it helps for body movement axle. 
-Disc hernia is a disease that occurs when core of the inter-vertebral disc migrates from its
-place in the center of the disc to the border parts like the medullarly channel or to the spaces 
-where the nervous roots lie. Spondylolisthesis disease appears when one of the 33 vertebras slips in relation to the others. 
-This slipping can cause pain or irritation of the nervous roots. 
-There are some biomedical attributes like pelvic incidence, pelvic tilt, lumbar lordosis angle, sacral slope, 
-pelvic radius and grade of spondylolisthesis which are recognized to be related with developing Disc hernia and 
-Spondylolisthesis. 
+This database which has obtained from sagittal panoramic radiographies of the spinecontains, 
+contains 100 patients who are volunteers without having any pathology in their spines (controls or normal patients),
+59 patients were operated due to disc hernia and 150 patients were operated due to spondylolisthesis. 
+In this database, each patient is represented by six biomechanical attributes derived from the shape and orientation
+of the pelvis and lumbar spine: pelvic incidence, pelvic tilt, lumbar lordosis angle, sacral slope, pelvic 
+radius and grade of spondylolisthesis. The outcome variable is categorical with three classes for existence of 
+any pathology in tspines. The class labels are: DH (Disk Hernia), Spondylolisthesis (SL), Normal (NO) and Abnormal (AB) [5].
 
 References:
 1) Neto, A.R.R., Barreto, G.A.: On the application of ensembles of classifiers to the diagnosis of pathologies of the vertebral column: A comparative analysis. IEEE Transactions on Latin America 7(4), 487{496 (Aug 2009)
