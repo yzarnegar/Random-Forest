@@ -1,1 +1,61 @@
 
+#Data description statistics:
+names(VertebralColumn)
+summary(VertebralColumn)
+ temp <- layout(matrix(1:6, nrow=2, byrow=T)) ## 2 by 3.
+ layout.show(temp) ## How does the layout look like?
+ for(j in c(1:6))
+   qqnorm(VertebralColumn[,j], notch=T, col="steelblue", main=names(VertebralColumn)[j])
+   qqline(VertebralColumn[,j])
+pairs(VertebralColumn[,c(1:6)], cex=0.5, col="green", col.axis="green")
+library(mvnormtest)
+A<-as.matrix(VertebralColumn[1:6])
+center<-colMeans(A)
+n<-nrow(A)
+p<-ncol(A)
+cov<-cov(A)
+d<-mahalanobis(A,center,cov)
+qqplot(qchisq(ppoints(n),df=p),d, main="QQ Plot Assessing Multivariate Normality",ylab="Mahalanobis D2")
+AT <- t(A)
+mshapiro.test(AT)
+
+#Random Forest:
+library(randomForest)
+library("caret")
+tuneRF(VertebralColumn[,-7], VertebralColumn$Class, mtryStart=3, ntreeTry=500, improve=0.05,stepFactor=1.5,
+       trace=TRUE, plot=TRUE)
+rft<-train(VertebralColumn[,-7], VertebralColumn$Class, method = "rf")
+rft
+rft$finalModel
+VertebralColum.rf <- randomForest(Class ~ ., data=VertebralColumn, importance=TRUE, mtry=2, proximation=TRUE)
+VertebralColum.rf
+importance(VertebralColum.rf)
+plot(VertebralColum.rf, type="l")
+varImpPlot(VertebralColum.rf)
+text(VertebralColum.rf, use.n=FALSE, pretty=5)
+library(varSelRF)
+rf.vs<-varSelRF(VertebralColumn[,-7], VertebralColumn$Class, ntree = 500,mtryFactor=2.2,
+ntreeIterat = 300, vars.drop.frac = 0.2)
+temp3 <- layout(matrix(1:2, nrow=1, byrow=T)) ## 1 by 2.
+ layout.show(temp3)
+plot(rf.vs, which = c(1, 2))
+
+#Gradient boosting:
+library(adabag)
+library(rpart)
+Vertebral.adaboost <- boosting(Class~., data=VertebralColumn, boos=TRUE, mfinal=100)
+Vertebral.adaboost
+Vertebral.adaboost$trees
+summary(Vertebral.adaboost)
+Vertebral.adaboost$votes
+cv<-boosting.cv(Class~., data=VertebralColumn, v = 5, boos = TRUE, mfinal = 100)
+cv
+boot.samp = sample(309,200,replace=T)
+boot.samp
+ sort(boot.samp)[1:200]
+ VertebralColumn.boot = VertebralColumn[boot.samp,]
+VertebralColumn.boot
+Vertebral.adaboost.pred predict.boosting(Vertebral.adaboost,data=VertebralColumn,VertebralColumn.boot)
+Vertebral.adaboost.pred
+Vertebral.adaboost.pred$confusion
+Vertebral.adaboost.pred$error
