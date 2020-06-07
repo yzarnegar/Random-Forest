@@ -21,7 +21,7 @@ mshapiro.test(AT)
 
 #Random Forest:
 library(randomForest)
-library("caret")
+library(caret)
 tuneRF(VertebralColumn[,-7], VertebralColumn$Class, mtryStart=3, ntreeTry=500, improve=0.05,stepFactor=1.5,
        trace=TRUE, plot=TRUE)
 rft<-train(VertebralColumn[,-7], VertebralColumn$Class, method = "rf")
